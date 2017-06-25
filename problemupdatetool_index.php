@@ -67,7 +67,7 @@
         if (!mysqli_query($database_connection, $database_query)) {
 
             // Handle any errors
-            throw new Exception("Error: Problem not added!");
+            throw new Exception("Error: problem not added bitch!");
         }
     }
 

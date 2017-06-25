@@ -2,6 +2,7 @@
 
     // Get page template
     $page_template = file_get_contents('problemupdatetool_template.html');
+    $demonstrative_monkey_variable_change = "a monkey";
 
     // Call functions
     try {

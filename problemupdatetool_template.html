@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+
+        <title>Problem Update Tool</title>
+
+    </head>
+
+    <body bgcolor=#ffffff>
+
+        <h2>Problem Update Tool</h2>
+
+        <form name="search" method="post" action="problemupdatetool_index.php">
+                
+            <br>Description: 
+            <input type="text" name="input_problem_description" />
+
+            Category / Status:
+            <Select NAME="input_category_id">
+
+                <Option VALUE="0"></option>
+                <Option VALUE="1">Service Outage</option>
+                <Option VALUE="2">Tools Outage</option>
+                <Option VALUE="3">Process Change</option>
+                
+            </Select>
+
+            <Select NAME="input_status_id">
+
+                <Option VALUE="0"></option>
+                <Option VALUE="1">Ongoing</option>
+                <Option VALUE="2">Critical</option>
+                <Option VALUE="3">Resolved</option>
+
+            </Select>
+
+            <br><br>Reported / Resolved:
+            <input type="datetime-local" name="input_problem_reported" />
+            <input type="datetime-local" name="input_problem_resolved" />
+
+            <br><br><input type="submit" name="search" value="Search Problems" />
+            <input type="submit" name="add" value="Add Problem" />
+                
+        </form>
+            
+        <!-- table_data -->
+            
+    </body>
+
+</html>
